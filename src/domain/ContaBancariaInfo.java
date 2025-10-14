@@ -1,11 +1,29 @@
 package domain;
 
-public class ContaBancariaInfo {
+public class ContaBancariaInfo{
     public int setCodigoConta;
     private String nomeTitular;
     private double saldo;
     private double dividas;
+    private double dividaAtualizada;
     private int codigoConta;
+    private String respUserSouN;
+
+    public double getDividaAtualizada() {
+        return dividaAtualizada;
+    }
+
+    public void setDividaAtualizada(double dividaAtualizada) {
+        this.dividaAtualizada = dividaAtualizada;
+    }
+
+    public String getRespUserSouN() {
+        return respUserSouN;
+    }
+
+    public void setRespUserSouN(String respUserSouN) {
+        this.respUserSouN = respUserSouN;
+    }
 
     public String getNomeTitular() {
         return nomeTitular;
@@ -15,7 +33,7 @@ public class ContaBancariaInfo {
         this.nomeTitular = nomeTitular;
     }
 
-    public double getSaldo(double s) {
+    public double getSaldo() {
         return saldo;
     }
 
